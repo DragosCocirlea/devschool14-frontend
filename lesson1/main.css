@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+}
+
+#internet {
+  color: red;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  border: 1px solid lightseagreen;
+  margin: 0px 15px;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 10px 20px;
+  min-width: 120px;
+  text-decoration: none;
+  color: mediumseagreen;
+}
+
+.nav-list li a:hover {
+  background: lightcyan;
+}

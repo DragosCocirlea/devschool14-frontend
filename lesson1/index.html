@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DevSchool 2020</title>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#internet">Internet</a>
+                    </li>
+                    <li>
+                        <a href="#protocol">Protocol</a>
+                    </li>
+                    <li>
+                        <a href="#dns">DNS</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1>DevSchool 2020</h1>
+
+        <h2 id="internet">Internet</h2>
+        
+        <p>Retea de calculatoare, servere</p>
+        <p>Baza de date de resurse</p>
+        
+        <img 
+            src="https://devschool-2020.web.app/assets/internet.png"
+            alt=internet
+            width=500
+        />
+
+        <blockquote>
+            <p>
+                The internet is a design philosophy and an architecture expressed in a set of protocols.
+            </p>
+            <img
+                src="https://devschool-2020.web.app/assets/vint.png"
+                alt="Vint Cerf"
+                width=100
+            />
+            - Vint Cerf (Internet co-creator)
+        </blockquote>
+
+        <h2 id="protocol">Protocol</h2>
+        <p>Un set de reguli. Un standard</p>
+
+        <h2 id="ipaddr">IP Address</h2>
+        <p>computer addr = Internet Protocol addr</p>
+
+        <h2 id="dns">DNS</h2>
+        <p>Domain name system</p>
+        <p>Asociaza IP-urile cu niste domenii</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>www.example.com</td>
+                    <td>192.0.2.0</td>
+                </tr>
+                <tr>
+                    <td>www.google.com</td>
+                    <td>172.217.16.174</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="webclient">Web Client</h2>
+        <p>User agent - program ce reprezinta o persoana in contextul web</p>
+        <p>Browser, aplicatie, bot, etc</p>
+
+        <h2 id="http">HTTP</h2>
+        <p>HyperText Transfer Protocol</p>
+        <p>Limbajul prin care comunica clientul cu un server</p>
+        <img
+                src="https://devschool-2020.web.app/assets/http.png"
+                alt="HTTP"
+                width=700
+            />
+
+
+        <h2 id="httpreq">HTTP Request methods</h2>
+        <ul>
+            <li>GET - retrieve resource</li>
+            <li>POST - send entity to resource</li>
+            <li>PATCH - apply partial modifications to a resource</li>
+            <li>DELETE - delete resource</li>
+            <li>PUT - replace resource</li>
+            <li>HEAD - similar to GET, but without body; check if resource exists</li>
+            <li>OPTIONS - describe the communication options for the resource</li>
+        </ul>
+
+        <h2 id="httpresp">HTTP Response codes</h2>
+        <ul>
+            <li>2xx - success</li>
+            <li>3xx - redirect</li>
+            <li>4xx - client error</li>
+            <li>5xx - server error</li>
+        </ul>
+
+        <h2 id="form">Formular</h2>
+        <form action="/placeholder-endpoint method="POST">
+            <label for="nume">Nume</label><br>
+            <input type="text" id="nume" name="nume"/>
+            <br><br>
+            <label for="prenume">Prenume</label><br>
+            <input type="text" id="prenume" name="prenume"/>
+            <br><br>
+            <label for="dataNasterii">Data nasterii</label><br>
+            <input type="date" id="dataNasterii" name="dataNasterii"/>
+            <br><br>
+            <label for="Descriere">Descriere</label><br>
+            <textarea id="desciere" name="descriere" cols="50" rows="5"></textarea>
+            <br><br>
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <footer>
+            <p>&copy; - DevSchool 2020</p>
+        </footer>
+
+    </body>
+</html>
