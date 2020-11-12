@@ -24,7 +24,6 @@ header #nav-site {
   display: flex;
   justify-content: center;
   text-align: center;
-  vertical-align: middle;
   font-weight: bold;
 }
 
@@ -42,7 +41,6 @@ header #welcome {
 .nav-list li a {
   display: block;
   margin: 0px 20px;
-  /* min-width: 120px; */
   text-decoration: none;
   color: #0d2e42;
 }
