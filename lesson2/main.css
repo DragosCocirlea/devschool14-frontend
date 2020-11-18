@@ -1,0 +1,111 @@
+:root {
+  --color-primary: #a375ff;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: lightcyan;
+  /* background-image: url(""); */
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  color: purple;
+}
+
+.em li {
+  font-size: 1.3em;
+  color: var(--color-primary);
+}
+.rem li {
+  font-size: 1.3rem;
+}
+
+.box-model {
+  width: 300px;
+  height: 100px;
+  background-color: rosybrown;
+  padding: 20px;
+  border: 10px solid gray;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.var {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-primary);
+}
+
+.var-two {
+  --color-primary: red;
+}
+
+.var-three {
+  --color-primary: green;
+}
+
+.position-static {
+  background: lightyellow;
+  padding: 1rem;
+  position: static;
+  /* top, right, bottom, left */
+  left: 20px;
+  z-index: 1; /* nu se aplica la static */
+}
+
+.position-relative {
+  background: lightpink;
+  padding: 1rem;
+  position: relative;
+  left: 20px;
+  top: -10px;
+  z-index: 2;
+}
+
+.position-absolute {
+  background: aquamarine;
+  padding: 1rem;
+  position: absolute;
+  top: -10px;
+  left: 200px;
+}
+
+.position-fixed {
+  position: fixed;
+  background: white;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+}
+
+.position-sticky {
+  position: sticky;
+  background: red;
+  bottom: 0;
+  display: flex;
+}
+
+.definition {
+  background: lightblue;
+  border-left: 4px solid blue;
+  margin-bottom: 10px;
+}
+
+.definition__row {
+  display: flex;
+}
+
+.definition__property {
+  font-weight: bold;
+  flex: 1;
+}
+
+.definition__value {
+}

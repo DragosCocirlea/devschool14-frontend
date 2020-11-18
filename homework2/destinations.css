@@ -1,0 +1,88 @@
+body {
+  margin: 0 0;
+}
+
+header {
+  font-family: sans-serif;
+}
+
+header #top-bar {
+  background-color: darkcyan;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+header #logo {
+  width: 100px;
+  height: 33px;
+}
+
+header #nav-site {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+header #welcome {
+  margin: 30px 0px 0px 10px;
+  padding: 0px 40px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0 0;
+}
+
+.nav-list li a {
+  display: block;
+  margin: 0px 20px;
+  text-decoration: none;
+  color: #0d2e42;
+}
+
+.nav-list li a:hover {
+  color: lightcyan;
+}
+
+main {
+  margin: 30px 10px;
+}
+
+main #destinations-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.destination {
+  flex-grow: 1;
+  width: 40%;
+  margin: 10px;
+  padding: 10px 30px;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+}
+
+.destination a {
+  text-decoration: none;
+  color: #0d2e42;
+}
+
+.destination a:hover {
+  color: cornflowerblue;
+}
+
+.destination-image {
+  text-align: center;
+  margin: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,40 @@
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: content;
+}
+
+.item4 {
+  grid-area: aside;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu menu content content content aside"
+    "menu menu footer footer footer footer";
+
+  /* grid-template-columns: auto auto auto;
+  grid-template-rows: 100px 200px auto;
+   */
+  /* grid-row-gap: 10px;
+  grid-column-gap: 10px; */
+
+  grid-gap: 15px;
+}
+
+.item {
+  background-color: cadetblue;
+  border: 1px solid yellowgreen;
+}
