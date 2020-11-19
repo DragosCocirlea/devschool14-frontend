@@ -15,8 +15,8 @@ header #top-bar {
 }
 
 header #logo {
-  width: 100px;
-  height: 33px;
+  width: 150px;
+  height: 50px;
 }
 
 header #nav-site {
@@ -30,6 +30,7 @@ header #nav-site {
 header #welcome {
   margin: 30px 0px 0px 10px;
   padding: 0px 40px;
+  text-align: center;
 }
 
 .nav-list {
@@ -68,6 +69,17 @@ main #destinations-container {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 801px) {
+  main #destinations-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination {
+    width: 95%;
+  }
+}
+
 .destination a {
   text-decoration: none;
   color: #0d2e42;
@@ -82,7 +94,18 @@ main #destinations-container {
   margin: 0px;
 }
 
+.destination-picture {
+  display: block;
+  text-align: center;
+}
+
+.destination-picture img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
+  background-color: darkcyan;
   display: flex;
   justify-content: center;
 }
