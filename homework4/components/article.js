@@ -8,7 +8,7 @@ class Article extends LitElement {
 
     render() {
         return html`
-            <div class="article-normal">
+            <div class="${this.id % 2 == 1 ? "article-normal" : "article-reverse"}">
                 <picture class="article-picture" alt="Best holiday locations in Romania">
                     <img src="https://picsum.photos/1001/600">
                 </picture>
@@ -49,6 +49,7 @@ class Article extends LitElement {
             .article-picture img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
             
             .article-text {

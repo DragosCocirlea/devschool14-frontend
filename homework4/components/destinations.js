@@ -17,7 +17,7 @@ class Destinations extends LitElement {
             <div class="destinations-container">
             ${this.destinations.map((destination, id) => {
                 return html`
-                    <app-destination .id="${id + 1}"></app-destination>
+                    <app-destination class="destination" .id="${id + 1}"></app-destination>
                 `
             }
         )}
@@ -38,11 +38,24 @@ class Destinations extends LitElement {
                 flex-direction: row;
                 flex-wrap: wrap;
             }
+
+            .destination {
+                flex-grow: 1;
+                width: 40%;
+                margin: 10px;
+                padding: 10px 30px;
+                background-color: antiquewhite;
+                box-sizing: border-box;
+            }
             
             @media screen and (max-width: 801px) {
                 .destination-container {
                     flex-direction: column;
                     align-items: center;
+                }
+
+                .destination {
+                    width: 95%;
                 }
             }
         `

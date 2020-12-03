@@ -8,7 +8,7 @@ class Destination extends LitElement {
 
     render() {
         return html`
-            <div class="destination">
+            <div>
                 <picture class="destination-picture" alt="London">
                     <img src="https://picsum.photos/900/600">
                 </picture>
@@ -30,27 +30,13 @@ class Destination extends LitElement {
 
     static get styles() {
         return css`
-            .destination {
-                flex-grow: 1;
-                width: 40%;
-                margin: 10px;
-                padding: 10px 30px;
-                background-color: antiquewhite;
-                box-sizing: border-box;
-            }
             
-            @media screen and (max-width: 801px) {    
-                .destination {
-                    width: 95%;
-                }
-            }
-            
-            .destination a {
+            a {
                 text-decoration: none;
                 color: #0d2e42;
             }
 
-            .destination a:hover {
+            a:hover {
                 color: cornflowerblue;
             }
 
