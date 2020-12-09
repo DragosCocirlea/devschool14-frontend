@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cloud Travel - Home</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+
+        <header>
+            <app-header>
+                <h1 slot="title">Welcome to Cloud Travel!</h1>
+            </app-header>
+        </header>
+
+        <main>
+            <app-about></app-about>
+            <app-articles></app-articles>
+        </main>
+
+        <app-footer></app-footer>
+
+        <script type="module" src="components/app-header.js"></script>
+        <script type="module" src="components/about.js"></script>
+        <script type="module" src="components/articles.js"></script>
+        <script type="module" src="components/app-footer.js"></script>
+
+    </body>
+
+</html>
