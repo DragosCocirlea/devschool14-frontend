@@ -33,6 +33,11 @@ class Destination extends LitElement {
 
     static get styles() {
         return css`
+
+            p {
+                text-align: justify;
+                text-justify: inter-word;
+            }
             
             a {
                 text-decoration: none;

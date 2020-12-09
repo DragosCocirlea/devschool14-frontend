@@ -62,6 +62,11 @@ class Article extends LitElement {
                 margin: 10px;
                 padding: 10px 30px;
             }
+
+            .article-text p {
+                text-align: justify;
+                text-justify: inter-word;
+            }
         `
     }
 }
